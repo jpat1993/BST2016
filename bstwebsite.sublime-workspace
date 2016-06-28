@@ -1,0 +1,873 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"app",
+				"appendChild"
+			],
+			[
+				"bold",
+				"bolder"
+			],
+			[
+				"re",
+				"register-card"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"cu",
+				"current_fs"
+			],
+			[
+				"cur",
+				"current_fs"
+			],
+			[
+				"cure",
+				"current_fs"
+			],
+			[
+				"current",
+				"current_fs"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"curre",
+				"current_fs"
+			],
+			[
+				"next",
+				"next_fs"
+			],
+			[
+				"n",
+				"next_fs"
+			],
+			[
+				"nex",
+				"next_fs"
+			],
+			[
+				"O",
+				"ObjectID"
+			],
+			[
+				"g",
+				"getCurrentStep"
+			],
+			[
+				"curr",
+				"currentIndex"
+			],
+			[
+				"bl",
+				"bolder"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"js",
+				"js"
+			],
+			[
+				"saveS",
+				"saveShloaks"
+			],
+			[
+				"calloc",
+				"my_calloc"
+			],
+			[
+				"pr",
+				"freelist_print"
+			],
+			[
+				"test",
+				"testarray"
+			],
+			[
+				"array",
+				"array2"
+			],
+			[
+				"size",
+				"sizeof"
+			],
+			[
+				"bu",
+				"buddyBlock"
+			],
+			[
+				"prin",
+				"freelist_print"
+			],
+			[
+				"fre",
+				"freelist"
+			],
+			[
+				"bloc",
+				"block_size"
+			],
+			[
+				"print",
+				"freelist_print"
+			],
+			[
+				"dest",
+				"destination"
+			],
+			[
+				"fr",
+				"freelist_print"
+			],
+			[
+				"pre",
+				"prev"
+			],
+			[
+				"prev",
+				"prevOne"
+			],
+			[
+				"budd",
+				"buddyblock"
+			],
+			[
+				"end",
+				"endWhile"
+			],
+			[
+				"get",
+				"getIndex"
+			],
+			[
+				"want",
+				"wantedIndex"
+			],
+			[
+				"spl",
+				"split"
+			],
+			[
+				"spli",
+				"splitupBlock"
+			],
+			[
+				"new",
+				"newBlocks"
+			],
+			[
+				"sp",
+				"split"
+			],
+			[
+				"wan",
+				"wantedIndex"
+			],
+			[
+				"my",
+				"my_malloc"
+			],
+			[
+				"free",
+				"freelist"
+			],
+			[
+				"SR",
+				"SBRK_SIZE"
+			],
+			[
+				"num",
+				"num_bytes"
+			],
+			[
+				"merg",
+				"mergeBlock"
+			],
+			[
+				"buddy",
+				"buddyBit"
+			],
+			[
+				"meta",
+				"metadata_t"
+			],
+			[
+				"mer",
+				"mergeIndex"
+			],
+			[
+				"merge",
+				"mergeIndex"
+			],
+			[
+				"NO",
+				"NO_ERROR"
+			],
+			[
+				"met",
+				"metadata_t"
+			],
+			[
+				"pop",
+				"pop_back"
+			],
+			[
+				"s",
+				"sizeof"
+			],
+			[
+				"m",
+				"mynode"
+			],
+			[
+				"new_",
+				"new_list2"
+			],
+			[
+				"remo",
+				"remove_back"
+			],
+			[
+				"rem",
+				"remove_front"
+			],
+			[
+				"copy",
+				"copy_func"
+			],
+			[
+				"create_",
+				"create_list"
+			],
+			[
+				"sour",
+				"source_row"
+			],
+			[
+				"imag",
+				"image_width"
+			],
+			[
+				"des",
+				"destination_col"
+			],
+			[
+				"sourc",
+				"source_height"
+			],
+			[
+				"colo",
+				"color1new"
+			],
+			[
+				"draw",
+				"draw_fffchar"
+			],
+			[
+				"mov",
+				"moveLedges"
+			],
+			[
+				"ex",
+				"exit"
+			],
+			[
+				"dat",
+				"data_arr"
+			],
+			[
+				"da",
+				"data_arr"
+			],
+			[
+				"in",
+				"infile"
+			],
+			[
+				"Butt",
+				"BUTTONS"
+			],
+			[
+				"MU",
+				"MULTIPLY"
+			],
+			[
+				"MULT",
+				"MULTLEFT"
+			],
+			[
+				"mx",
+				"maxProfit"
+			],
+			[
+				"min",
+				"minPrice"
+			],
+			[
+				"R2",
+				"R2SAVE"
+			],
+			[
+				"od",
+				"ODD_CNT"
+			],
+			[
+				"max",
+				"MAX_VAL"
+			],
+			[
+				"MIN",
+				"MIN_VAL"
+			],
+			[
+				"L",
+				"LENGTH"
+			],
+			[
+				"RE",
+				"RETURN0"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 19089,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 26454,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/main.css",
+			"settings":
+			{
+				"buffer_size": 4700,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"git",
+				"Git: Open..."
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 60.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Jay Patel/Desktop/Pebbles of Hope/Pebbles of Hope/poh-web/server.js",
+		"/C/xampp/htdocs/BSTWebsite Backup/index.html",
+		"/C/xampp/htdocs/BSTGrading/js/login.js",
+		"/C/Users/Jay Patel/Documents/GitHub/BSTWebsite/js/app.js",
+		"/C/Users/Jay Patel/Desktop/SS15CertificateGenerator/CGREADME.txt",
+		"/C/Users/Jay Patel/Desktop/SS15CertificateGenerator-2015-08-04/SS15CertificateGenerator/CGREADME.txt",
+		"/C/xampp/htdocs/BSTGrading/css/bootstrap.css",
+		"/C/xampp/htdocs/BSTGrading/css/bootstrap.min.css",
+		"/C/xampp/htdocs/BSTGrading/css/style.css",
+		"/C/Users/Jay Patel/Desktop/RC Seva/AdhiveshanSS15/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080615_BMFINAL/Adhiveshan/js/scoringBM.js",
+		"/C/Users/Jay Patel/Desktop/RC Seva/AdhiveshanSS15/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080615_BMFINAL/Adhiveshan/menuBM.html",
+		"/C/Users/Jay Patel/Desktop/RC Seva/AdhiveshanSS15/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080615_BMFINAL/Adhiveshan/index.html",
+		"/C/Users/Jay Patel/Desktop/RC Seva/AdhiveshanSS15/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080615_BMFINAL/Adhiveshan/scoringBM.html",
+		"/C/Users/Jay Patel/Desktop/RC Seva/AdhiveshanSS15/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080615_BMFINAL/Adhiveshan/js/main.js",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp2_sign-up-login-box.zip/index.html",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp2_log-in.zip/index.html",
+		"/C/xampp/htdocs/BSTGrading/js/index.js",
+		"/C/xampp/htdocs/BSTGrading/index.html",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp1_LoginForm.zip/xHTML/index.html",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp1_LoginForm.zip/xHTML/js/rainbows.js",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp1_LoginForm.zip/Readme.txt",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp1_sign-up-login-box.zip/license.txt",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp1_sign-up-login-box.zip/README.txt",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp2_parse-js-blank-1.5.0.zip/parse-js-blank/index.html",
+		"/C/Users/Jay Patel/Desktop/BUP5435b5ffbcb746.75973891",
+		"/C/Users/Jay Patel/Documents/GitHub/BSTWebsite/index.html",
+		"/C/Users/Jay Patel/Desktop/FormToWizard/formToWizard.js",
+		"/C/Users/Jay Patel/Desktop/jquery-steps-master/jquery-steps-master/demo/index.html",
+		"/C/Users/Jay Patel/Desktop/BST Samples/app.js",
+		"/C/Users/Jay Patel/Desktop/RC Seva/AdhiveshanSS15/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080615_BMFINAL/Adhiveshan/css/m-styles.min.css",
+		"/C/xampp/htdocs/BSTWebsite/js/jquery-1.9.1.min.js",
+		"/C/Users/Jay Patel/Desktop/htaccess",
+		"/C/Users/Jay Patel/Desktop/htaccess (1)",
+		"/C/xampp/htdocs/BST Website/tabs.html",
+		"/C/Users/Jay Patel/Desktop/jquery-steps-master/jquery-steps-master/Gruntfile.js",
+		"/C/xampp/htdocs/demo/lib/modernizr-2.6.2.min.js",
+		"/C/xampp/htdocs/demo/lib/jquery.cookie-1.3.1.js",
+		"/C/xampp/htdocs/demo/lib/jquery-1.11.1.min.js",
+		"/C/xampp/htdocs/demo/lib/jquery-1.10.2.min.js",
+		"/C/xampp/htdocs/demo/build/jquery.steps.js",
+		"/C/Users/Jay Patel/Desktop/jquery-steps-master/jquery-steps-master/test/index.html",
+		"/C/Users/Jay Patel/Desktop/jquery-steps-master/jquery-steps-master/test/jquery.js",
+		"/C/Users/Jay Patel/Desktop/jquery-steps-master/jquery-steps-master/test/tests.js",
+		"/C/Users/Jay Patel/Desktop/jquery-steps-master/jquery-steps-master/demo/tabs.html",
+		"/C/Users/Jay Patel/Desktop/BST Samples/New folder/index.htm",
+		"/C/Users/Jay Patel/Desktop/BST Samples/index.html",
+		"/C/Users/Jay Patel/Desktop/BST Website Project/README.md",
+		"/C/Users/Jay Patel/Desktop/BST Website/index.htm",
+		"/C/Users/Jay Patel/Desktop/BST Website/README.md",
+		"/C/Users/Jay Patel/Desktop/BST Website Project/app.js",
+		"/C/Users/Jay Patel/Desktop/BST Website Project/index.html",
+		"/C/Users/Jay Patel/Desktop/Creating-A-Modern-Multi-Step-Form-with-jQuery-CSS3/Creating-A-Modern-Multi-Step-Form-with-jQuery-CSS3/index.htm",
+		"/C/Users/Jay Patel/Desktop/BST Website Project/BSTwebsite/bower.json",
+		"/C/xampp/htdocs/BST website/index.html",
+		"/C/Users/Jay Patel/Desktop/Creating-A-Modern-Multi-Step-Form-with-jQuery-CSS3/Creating-A-Modern-Multi-Step-Form-with-jQuery-CSS3/README.md",
+		"/C/Users/Jay Patel/Desktop/BST website/mytodo/.tmp/styles/main.css",
+		"/C/xampp/htdocs/website/css/lightbox.css",
+		"/C/xampp/htdocs/website/css/jquery.fancybox.css",
+		"/C/xampp/htdocs/website/css/flickity.css",
+		"/C/xampp/htdocs/website/css/queries.css",
+		"/C/xampp/htdocs/website/css/styles.css",
+		"/C/xampp/htdocs/website/index.html",
+		"/C/xampp/htdocs/website/css/animate.css",
+		"/C/Users/Jay Patel/Desktop/AdhiveshanCC080615_BMFINAL/Adhiveshan/js/trackingBM.js",
+		"/C/Users/Jay Patel/Desktop/AdhiveshanCC080615_BMFINAL/AdhiveshanCC080615_BMFINAL/Adhiveshan/js/scoringBM.js",
+		"/C/Users/Jay Patel/Desktop/63f4beaa-60a9-42e8-8056-b153070b46ce_1435033132_export/SEEBAdhiveshanDB.json",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp1_AdhiveshanCC080915_BMFINAL.zip/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080615_BMFINAL/Adhiveshan/scoringBM.html",
+		"/C/Users/Jay Patel/Desktop/AdhiveshanCC080615_BMFINAL/AdhiveshanCC080615_BMFINAL/Adhiveshan/scoringBM.html",
+		"/C/Users/Jay Patel/Desktop/63f4beaa-60a9-42e8-8056-b153070b46ce_1435033132_export/index.html",
+		"/C/Users/Jay Patel/Desktop/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080915_BMFINAL/AdhiveshanCC080615_BMFINAL/Adhiveshan/scoringBMSkills.html",
+		"/C/Users/Jay Patel/Desktop/AdhiveshanCC080615_BMFINAL/Adhiveshan/trackingBM.html",
+		"/C/Users/Jay Patel/Desktop/AdhiveshanCC080615_BMFINAL/Adhiveshan/registration.html",
+		"/C/Users/Jay Patel/Desktop/AdhiveshanCC080615_BMFINAL/Adhiveshan/scoringBM.html",
+		"/C/Users/Jay Patel/Desktop/AdhiveshanCC250415/Adhiveshan/js/scoring.js",
+		"/C/Users/Jay Patel/Desktop/AdhiveshanCC250415/Adhiveshan/js/registration.js",
+		"/C/Users/Jay Patel/Desktop/AdhiveshanCC250415/Adhiveshan/js/main.js",
+		"/C/Users/Jay Patel/Desktop/AdhiveshanCC250415/Adhiveshan/scoring.html",
+		"/C/Users/Jay Patel/Desktop/AdhiveshanCC250415/Adhiveshan/registration.html",
+		"/C/Users/Jay Patel/Desktop/AdhiveshanCC250415/Adhiveshan/index.html",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Lab20/myLib.h",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Lab20/myLib.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Lab20/main.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Lab21/DMATraining/Assignment.txt",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Timed Lab 3/TL3/main.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Lab24/fp.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Old/CS 2110/Practice Finals/cs2110Spring2012FinalExamPRACTICE.txt",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Old/CS 2110/Practice Finals/cs2110Spring2013FinalExamPRACTICE.txt",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Old/CS 2110/Practice Finals/cs2110Fall2012FinalExamPRACTICE.txt",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Old/CS 2110/Practice Finals/cs2110Summer2012FinalExamPRACTICE.txt",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Lab15/lab15.txt",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Lab16/lab16.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW10/HW10/list/Makefile",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW11/assignment/Makefile",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW11/test2.c",
+		"/C/xampp/htdocs/CS4460-Project-master_final/index.html",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW6/bubble.asm",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW7/eval.asm",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW6/multiple.asm",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW6/count.asm",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Lab4/lab4.txt",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW10/HW10/list/test.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW11/assignment/my_malloc.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW11/BuddySystem-FreelistMalloc-c78c08dd8e78f8a80a946ae74bfd5d9a95e493e2/BuddySystem-FreelistMalloc-c78c08dd8e78f8a80a946ae74bfd5d9a95e493e2/test.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW11/mayur/Makefile",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp1_HW13_malloc.zip/HW13_malloc/my_malloc.c",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp1_HW13_malloc.zip/HW13_malloc/test.c",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp1_HW13_malloc.zip/HW13_malloc/my_sbrk.c",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp1_HW13_malloc.zip/HW13_malloc/list.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW11/assignment/debugging.nfo",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Timed Lab 4/timedlab4/Makefile",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Timed Lab 4/timedlab4/list.h",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW10/HW10/list/list.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Timed Lab 4/timedlab4/list.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Timed Lab 4/timedlab4/test.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW11/assignment/test.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/HW11/assignment/my_sbrk.c",
+		"/C/Users/Jay Patel/Desktop/RC Seva/Checklist/Trials/simple-flat-buttons-psd/simple-flat-buttons-psd/readme.txt",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Timed Lab 4/timedlab4/valgrind1.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Timed Lab 4/timedlab4/valgrind2.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Old/CS2110-master/timeLab4/list.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Old/CS-2110-master/Labs/timed_lab_04/TL4MAKEUP/tllist.h",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Old/CS-2110-master/Labs/timed_lab_04/TL4MAKEUP/tllist.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Old/Old Trials/main.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Old/Old Trials/list.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Old/Old Trials/timedlab4/list.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Old/Old Trials/extra/list.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Old/Old Trials/extra/main.c",
+		"/C/Users/Jay Patel/Desktop/CS 2110/Old/CS2110-master/timeLab4/main.c"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"bootstrap",
+			"next",
+			"button",
+			"buttons",
+			"/option",
+			"option",
+			"logmsk",
+			"<<<<<<< HEAD",
+			"addClass",
+			"next",
+			"prog",
+			"selected",
+			"disabled",
+			"values",
+			"first",
+			"next_fs",
+			"Confirmation",
+			"DB",
+			"msform",
+			"current_fs",
+			"getStep",
+			"        <script src=\"js/jquery.steps.js\"></script>",
+			"getSTep",
+			"insert",
+			"insert	",
+			"insert",
+			"getStep",
+			"contentContainerTag",
+			"insert",
+			"contentMode",
+			"loadAsyncContent",
+			"getStep",
+			"steps",
+			"getStepPanel",
+			"contentContainerTag",
+			"label",
+			"next",
+			"parse",
+			"next",
+			"clearfix",
+			"actions clearfix",
+			"actions",
+			"onStepChanged",
+			"step",
+			"form",
+			"steps",
+			"this",
+			"label",
+			"required",
+			"example-advanced-form\n",
+			"example-advanced-form",
+			"puja",
+			";\n",
+			"form",
+			"userName-2\nuserName-2",
+			"userName-2\n",
+			"userName-2",
+			"label",
+			"wp1\nwp1",
+			"wp1\n",
+			"wp1",
+			"features-img wp1",
+			"features",
+			"SwaminiVato_NumberQuiz",
+			"mukhpath",
+			"kirtan",
+			"kirtanmukhpath",
+			"\");\n",
+			"save",
+			"SBRK_SIZE",
+			"SRBK",
+			"SRBL",
+			"testarray",
+			"my_sbrk",
+			"givemefreelist",
+			"needed",
+			"ERRNO",
+			"dy",
+			"font",
+			"dy",
+			"ledges[n].dy",
+			"elementCount",
+			"level",
+			"numOfElements",
+			"y2",
+			"y1",
+			"collisionDetection",
+			"scoreStr",
+			"stairs",
+			"STAIR",
+			"numOfStairs",
+			"Vcount",
+			"wait",
+			"wiat",
+			"drawLine",
+			"fillscreen",
+			"drawHollowRect",
+			"drawRec",
+			"gameStatus",
+			"startGame",
+			"player.dy",
+			"gamestatus",
+			"prev_touch_index",
+			"moveAllStairs",
+			"10",
+			"player.dy",
+			"player.a",
+			"player",
+			"drawPlayer",
+			"notebook",
+			"titleScreen",
+			"drawImage3",
+			"h1",
+			"row hero-content",
+			"hero",
+			"face",
+			"#",
+			"nav_slide_button nav-toggle",
+			"trigger-overlay",
+			"seen",
+			"background",
+			"3400",
+			"3342",
+			"0000",
+			"3342",
+			"unsigned",
+			"buffer",
+			"data"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"br /",
+			"input type=\"checkbox\" name=\"center\" ",
+			"",
+			"input type=\"checkbox\" name=\"center\" ",
+			"",
+			"disabled",
+			"",
+			"replaceCount",
+			"elementCount",
+			"yOld",
+			"yNew",
+			"detectCollision",
+			"scoreString",
+			"ledges",
+			"LEDGE",
+			"numLedges"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 19089,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5945,
+								5987
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/app.js",
+					"settings":
+					{
+						"buffer_size": 26454,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/main.css",
+					"settings":
+					{
+						"buffer_size": 4700,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								837,
+								837
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 702.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 25.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": true
+}

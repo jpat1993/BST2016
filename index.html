@@ -1,0 +1,360 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>             <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>BST Application</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+<!--         <link rel="stylesheet" href="css/normalize.css">
+         -->        
+         <link rel="icon" type="image/ico" href="favicon.ico"/>
+         <link rel="stylesheet" href="css/main.css">
+<!--         <link rel="stylesheet" href="css/jquery.steps.css">
+ -->
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+<!--         // <script src="js/modernizr-2.6.2.min.js"></script>
+
+// <script src="js/jquery.cookie-1.3.1.js"></script>
+// <script src="js/jquery.steps.js"></script> -->
+        
+
+    </head>
+    <body>
+
+        <div class="content">
+            <a href="index.html"><h1>Bal Sevak Training 2016-2017 Application Form</h1></a>
+            <h4>Please fill out this form with as much detail as possible, this form will autosave everytime the next button is clicked. </h4> 
+            <h4>You can resume your application using your email and password that you set. If you have any questions please email sebalmandal@gmail.com.</h4>
+        </div>
+
+        <form id="msform">
+
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="hidden">Login</li>
+                <li class="hidden">Search</li>
+                <li class= "link" id ="startfs" onclick="headerClick(id)"><a href="#">Personal Information</a> </li>
+                <li class= "link" id ="parentfs" onclick="headerClick(id)"><a href="#">Parental Information</a></li>
+                <li class= "link" id ="sanchalakfs" onclick="headerClick(id)"><a href="#">Sanchalak Information</a></li>
+                <!-- <li class= "link" id ="academicfs" onclick="headerClick(id)"><a href="#">Academic Information</a></li> -->
+                <!-- <li class= "link" id ="satsangfs" onclick="headerClick(id)"><a href="#">Satsang Exam</a></li> -->
+                <li class= "link" id ="essayfs" onclick="headerClick(id)"><a href="#">Essay</a></li>
+                <!-- <li class= "link" id ="niyamfs" onclick="headerClick(id)"><a href="#">Niyam Assessment</a></li> -->
+                <li class= "link" id ="finish" onclick="headerClick(id)"><a href="#">Finish</a></li>
+
+
+            </ul>
+
+
+
+            <fieldset id= "login">
+
+
+                <h2 class="fs-title">Login</h2>
+                <h3 class="fs-subtitle">Select New User or Existing User</h3>
+
+                <input style="background-color:#026BAD; color: white;" type="button" name="new" class="new" value="New User" />
+                <input style="background-color:#27AE60; color: white;" type="button" name="existing" class="existing" value="Existing User" />
+   
+            </fieldset>
+
+            
+            <fieldset id= "existingfs1">
+
+
+                <h2 class="fs-title">Enter Email</h2>
+                <h3 class="fs-subtitle">Search Email and enter Password</h3>
+
+                <div class="form-group">
+                                 <label class = "titles">Email</label>
+                                 <div class="example" dir="ltr">Ex: bst@gmail.com</div>
+                                 <input id = "old" name="old" type="email">
+
+                            </div>
+
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="search" class="search action-button" value="Search" />
+                <div  style="text-align: center;" class ="results" id="searchResults"></div>
+  
+            </fieldset>
+
+
+            
+            <fieldset id="startfs1">
+
+                <h2 class="fs-title">Personal Information</h2>
+                <h3 class="fs-subtitle">Please enter your personal information with as much details as possible.</h3>
+
+                <div class="form-group">
+                                 <label class = "titles">First name *</label>
+                                 <div class="example" dir="ltr">Ex: Akshar</div>
+                                 <input id = "firstname" name="firstname" type="text" class="required">
+                </div>
+                
+                <div class="form-group">
+                                 <label class = "titles">Middle name *</label>
+                                 <div class="example" dir="ltr">Ex: Rajendra</div>
+                                 <input id = "middlename" name="middlename" type="text" class="required">
+                </div>
+
+                <div class="form-group">
+                                 <label class = "titles">Last name *</label>
+                                 <div class="example" dir="ltr">Ex: Patel</div>
+                                 <input id = "lastname" name="lastname" type="text" class="required">
+                </div>
+
+                <div class="form-group">
+                                 <label class = "titles">Date of Birth *</label>
+                                 <div class="example" dir="ltr">Ex: 01/09/2000 = January 9, 2000 </div>
+                                 <input id = "birthday" name="birthday" type="text" class="required">
+                            </div>
+                <div class="form-group">
+                                 <label class = "titles">Center *</label>
+                                 <div class="example"></div>
+                                    <select id = "center" name = "center" class="input required" >
+                                       <option disabled> -- Select a Center -- </option>
+                                       <option selected>Select an Option</option>
+                                        <option value="Albany">Albany</option>
+                                        <option value="Atlanta">Atlanta</option>
+                                        <option value="Augusta">Augusta</option>
+                                        <option value="Birmingham">Birmingham</option>
+                                        <option value="Calhoun">Calhoun</option>
+                                        <option value="Columbia">Columbia</option>
+                                        <option value="Charlotte">Charlotte</option>
+                                        <option value="Chattanooga">Chattanooga</option>
+                                        <option value="Dothan/Ozark">Dothan/Ozark</option>
+                                        <option value="Gainesville ">Gainesville </option>
+                                        <option value="Greensboro">Greensboro</option>
+                                        <option value="Greenville">Greenville</option>
+                                        <option value="Huntsville">Huntsville</option>
+                                        <option value="Jacksonville ">Jacksonville </option>
+                                        <option value="Knoxville">Knoxville</option>
+                                        <option value="Melbourne">Melbourne</option>
+                                        <option value="Memphis">Memphis</option>
+                                        <option value="Miami">Miami</option>
+                                        <option value="Montgomery">Montgomery</option>
+                                        <option value="Myrtle Beach">Myrtle Beach</option>
+                                        <option value="Nashville">Nashville</option>
+                                        <option value="Orangeburg">Orangeburg</option>
+                                        <option value="Orlando">Orlando</option>
+                                        <option value="Perry">Perry</option>
+                                        <option value="Raleigh">Raleigh</option>
+                                        <option value="Savannah">Savannah</option>
+                                        <option value="Tampa">Tampa</option>
+                                    </select>
+                            </div>
+                 <div class="form-group">
+                                 <label class = "titles">Address *</label>
+                                 <div class="example" dir="ltr">Ex: 100 Main St</div>
+                                 <input id = "address" name="address" type="text" class="required">
+                            </div>
+                <div class="form-group">
+                                 <label class = "titles">City *</label>
+                                 <div class="example" dir="ltr">Ex: Atlanta</div>
+                                 <input id = "city" name="city" type="text" class="form-control required">
+                            </div>
+                <div class="form-group">
+                                 <label class = "titles">State *</label>
+                                 <div class="example" dir="ltr">Ex: GA</div>
+                                 <input id = "state" name="state" type="text" class="form-control required">
+                            </div>
+                        
+                <div class="form-group">
+                                 <label class = "titles">Zip Code *</label>
+                                 <div class="example" dir="ltr">Ex: 30332</div>
+                                 <input id = "zip" name="zip" type="text" class="form-control required">
+                            </div>
+                <div class="form-group">
+                                 <label class = "titles">Home Phone *</label>
+                                 <div class="example" dir="ltr">Ex: 404-999-1111</div>
+                                 <input id = "homephone" name="homephone" type="tel" class="form-control required">
+                            </div>
+                <div class="form-group">
+                                 <label class = "titles">Cell Phone *</label>
+                                 <div class="example" dir="ltr">Ex: 404-999-1111</div>
+                                 <input id = "cell" name="cell" type="tel" class="form-control required">
+                            </div>
+                <div class="form-group">
+                                 <label class = "titles">Email *</label>
+                                 <div class="example" dir="ltr">Ex: bst@gmail.com</div>
+                                 <input id = "email" name="email" type="email" class="form-control required">
+                            </div>
+                 <div class="form-group">
+                                 <label class = "titles">Password *</label>
+                                 <div class="example"></div>
+                                 <input id = "password" type="password" name="password" type="text" class="form-control required">
+                            </div>
+                <div class="form-group">
+                                 <label class = "titles">Confirm Password *</label>
+                                 <div class="example"></div>
+                                 <input id = "confirm" type="password" name="confirm" type="text" class="form-control required">
+                            </div>
+
+                
+                <p>(*) Mandatory</p>
+
+                <!-- <input type="button" name="previous" class="previous action-button" value="Previous" />                 -->
+                <input type="button" name="save" class="save action-button" value="Save" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+
+
+            </fieldset>
+
+
+         
+            <fieldset id ="parentfs1">
+
+
+                <h2 class="fs-title">Parental Information</h2>
+                <h3 class="fs-subtitle">Please enter your parents information with as much detail as possible. You must include one parents email address.</h3>
+                
+                <div class="form-group">
+                    <label class = "titles">Father's Full Name *</label>
+                    <div class="example" dir="ltr">Haribhai Patel</div>
+                    <input id="father" name="father" type="text" class="required">
+
+                </div>
+                
+                <div class="form-group">
+                     <label class = "titles">Father's Mobile Number</label>
+                     <div class="example" dir="ltr">Ex: 404-999-1111</div>
+                     <input id="fatherPhone" name="fatherPhone" type="tel" >
+                </div>
+                
+                 <div class="form-group">
+                    <label class = "titles">Father's Email</label>
+                    <div class="example" dir="ltr">father@gmail.com</div>
+                    <input id="fatherEmail" name="fatherEmail" type="text" >
+                </div>
+
+                 <div class="form-group">
+                    <label class = "titles">Mother's Full Name *</label>
+                    <div class="example" dir="ltr">Shilpaben Patel</div>
+                    <input id="mother" name="mother" type="text" class="required">
+
+                </div>
+                
+                <div class="form-group">
+                     <label class = "titles">Mother's Mobile Number</label>
+                     <div class="example" dir="ltr">Ex: 404-999-1111</div>
+                     <input id="motherPhone" name="motherPhone" type="tel" >
+                </div>
+                
+                 <div class="form-group">
+                    <label class = "titles">Mother's Email</label>
+                    <div class="example" dir="ltr">mother@gmail.com</div>
+                    <input id="motherEmail" name="motherEmail" type="text" >
+                </div>
+                
+                <p>(*) Mandatory</p>
+
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="save" class="save action-button" value="Save" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+
+            </fieldset>
+         
+
+            <fieldset id ="sanchalakfs1">
+                <h2 class="fs-title">Sanchalak Information</h2>
+                <h3 class="fs-subtitle">Please enter your sanchalak's information.</h3>
+                
+
+                <div class="form-group">
+                    <label class = "titles">Main Sanchalak's Full Name *</label>
+                    <div class="example" dir="ltr">Haribhai Patel</div>
+                    <input id="sanchalak" name="sanchalak" type="text" class="required">
+
+                </div>
+                
+                <div class="form-group">
+                     <label class = "titles">Main Sanchalak's Mobile Number *</label>
+                     <div class="example" dir="ltr">Ex: 404-999-1111</div>
+                     <input id="sanchalakPhone" name="sanchalakPhone" type="tel" class="required">
+                </div>
+                
+                 <div class="form-group">
+                    <label class = "titles">Main Sanchalak's Email *</label>
+                    <div class="example" dir="ltr">sanchalak@gmail.com</div>
+                    <input id="sanchalakEmail" name="sanchalakEmail" type="text" class="required">
+                </div>
+
+                
+                <p>(*) Mandatory</p>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="save" class="save action-button" value="Save" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+
+
+            
+
+        
+            <fieldset id ="essayfs1">
+                <h2 class="fs-title">Essay Section</h2>
+                <h3 class="fs-subtitle">Please answer ALL of the following questions.</h3>
+
+                <div class="form-group">
+                    <label class = "titles">What do you expect to learn from Bal Sevak Training? *</label>
+                    <div class="example" dir="ltr">Please answer in 3-5 sentences</div>
+                    <textarea id="essay1" name="essay1" class="input required form-control" rows="5"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class = "titles">In one sentence, explain who Swamishri is to you in your life. (Text book answers such as “He is Akshar” or
+                        “He is the Guru who guides me” will not be accepted). Be original! *</label>
+                    <div class="example" dir="ltr">Please answer in 3-5 sentences</div>
+                    <textarea id="essay2" name="essay2" class="input required form-control" rows="5"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class = "titles">Please provide two references from this year’s adhiveshan and discuss how you have applied them to your life? *
+                    </label>
+                    <div class="example" dir="ltr">Please answer in 3-5 sentences</div>
+                    <textarea id="essay3" name="essay3" class="input required form-control" rows="5"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class = "titles">Write a personal prathna to Swamishri.*</label>
+                    <div class="example" dir="ltr">Please answer in 3-5 sentences</div>
+                    <textarea id="essay4" name="essay4" class="input required form-control" rows="5"></textarea>
+                </div>
+
+                
+                <p>(*) Mandatory</p>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="save" class="save action-button" value="Save" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+
+            
+
+            <fieldset id ="finish1">
+                <h2 class="fs-title">Jay Swaminarayan</h2>
+                <h3 class="fs-subtitle"> Thank You for your BST Application.</h3>
+                <input type="button" name="logout" class="logout action-button" value="Log Out" />
+            </fieldset>
+
+        </form>
+
+
+            <script src="js/parse-1.6.14.min.js"></script>
+
+
+            <script src="js/jquery-1.9.1.min.js"></script>
+            <!-- jQuery easing plugin -->
+            <script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+          
+
+            <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+        
+
+            <script src="js/bootstrap.min.js"></script>
+
+            <script src="js/app.js"></script>
+    </body>
+</html>
