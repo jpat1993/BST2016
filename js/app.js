@@ -6,15 +6,15 @@ var current_fs, next_fs, previous_fs; //fieldsets
 var left, opacity, scale; //fieldset properties which we will animate
 var animating; //flag to prevent quick multi-click glitches
 var inputs;
-var obj = {id: "unchanged", submitted: false, first: true, current: "#login"};
+var obj = {id: "unchanged", submitted: false, first: true, current: "#region"};
 
 var newapp = true;
 
-var fieldsets = ["#login", "#existingfs1", "#startfs1", "#parentfs1", "#sanchalakfs1", "#academicfs1", "#satsangfs1", "#essayfs1", "#niyamfs1", "#finish1"]
+var fieldsets = ["#region", "#login", "#existingfs1", "#startfs1", "#parentfs1", "#sanchalakfs1", "#academicfs1", "#satsangfs1", "#essayfs1", "#niyamfs1", "#finish1"]
 
 Parse.initialize("1dlfQyT8N0OrUJXzRWk9gtWz3fXHYNgKnZNOhWyY", "OTs8JFyPYJ3yrm03qc1jgY9NGCFJBXqsxsNCKT8E");
 Parse.serverURL = 'https://parseapi.back4app.com';
-var DB = "SE_BST_2016";
+var DB;         // need for accessing the DB in parse
 
 function headerClick(id){   
 
@@ -63,6 +63,60 @@ function headerClick(id){
     } else {
         alert("Please Fill out all the Required Information");
     }
+
+};
+
+function regionClick(id){
+
+    // console.log($(this).parent());
+    // console.log($("#start"));
+
+    // newapp = true;
+
+    animating = true;
+
+    current_fs = $(this).parent();
+    console.log(obj.current);
+
+    console.log(id);
+
+    if(id == "southeast") {
+        DB = "SE_BST_2016";
+        var cent = document.getElementById("SEcenter");
+        cent.classList.remove('hide');
+    } else if (id == "northeast") {
+        DB = "NE_BST_2016";
+        var cent = document.getElementById("NEcenter");
+        cent.classList.remove('hide');
+    } else if (id == "midwest") {
+        DB = "MW_BST_2016";
+        var cent = document.getElementById("MWcenter");
+        cent.classList.remove('hide');
+    } else if (id == "southwest") {
+        DB = "SW_BST_2016";
+        var cent = document.getElementById("SWcenter");
+        cent.classList.remove('hide');
+    } else if (id == "west") {
+        DB = "West_BST_2016";
+        var cent = document.getElementById("Wcenter");
+        cent.classList.remove('hide');
+    } else if (id == "canada") {
+        DB = "Canada_BST_2016";
+        var cent = document.getElementById("Canadacenter");
+        cent.classList.remove('hide');
+    }
+ 
+
+
+    next_fs = $("#login");
+    // next_fs.show(); 
+    obj.current = next_fs;
+    console.log(obj.current);
+
+    shiftPage(current_fs, next_fs);
+
+    var region = document.getElementById("region");
+    region.classList.add('hide');;
 
 };
 
@@ -129,8 +183,8 @@ $(".existing").click(function(){
     next_fs = $("#existingfs1");
     next_fs.show(); 
     obj.current = next_fs;
-        console.log(obj.current);
-    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+    console.log(obj.current);
+    // $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 
     current_fs.animate({opacity: 0}, {
             step: function(now, mx) {
@@ -252,7 +306,7 @@ function gotoStart(){
     obj.current = next_fs;
         console.log(obj.current);
 
-    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+    $("#progressbar li").eq($("fieldset").index(next_fs)-1).addClass("active");
 
 
     current_fs.animate({opacity: 0}, {
@@ -542,7 +596,7 @@ function shiftPage(current_fs, next_fs) {
     //activate next step on progressbar using the index of next_fs
         // $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
         
-        $("#progressbar li").eq(next_fs.index()-1).addClass("active");
+        $("#progressbar li").eq(next_fs.index()-2).addClass("active");
    
         //show the next fieldset
         next_fs.show(); 
@@ -578,11 +632,39 @@ function shiftPage(current_fs, next_fs) {
 function checkifValid(values) {
     console.log(newapp);
     var pass;
+    var sum = 0;
     for (var prop in values) {
         var value = values[prop].value;
-        if(value === "" || value === "Select an Option") {
+        var name = values[prop].name;
+
+        // For the Niyam Validate
+        if(value === "" || value === "-- --") {
            return false;
         }
+
+        // For the Niyam Add.
+        if(name.indexOf("NA") >= 0) {
+            sum = +sum + +value;
+        }
+        // console.log(sum);
+
+
+        // For the Center Validate
+        if(DB === "SE_BST_2016" && values[prop].name === "SEcenter" && value === "Select an Option") {
+            return false;
+        } else if (DB === "NE_BST_2016" && values[prop].name === "NEcenter" && value === "Select an Option") {
+            return false;
+        } else if (DB === "MW_BST_2016" && values[prop].name === "MWcenter" && value === "Select an Option") {
+            return false;
+        } else if (DB === "SW_BST_2016" && values[prop].name === "SWcenter" && value === "Select an Option") {
+            return false;
+        } else if (DB === "West_BST_2016" && values[prop].name === "Wcenter" && value === "Select an Option") {
+            return false;
+        } else if (DB === "Canada_BST_2016" && values[prop].name === "Canadacenter" && value === "Select an Option") {
+            return false;
+        }
+        
+
         if(values[prop].name === "password") {
             pass = values[prop].value;
         }
@@ -615,6 +697,35 @@ function checkifValid(values) {
             });
 
         }
+    }
+
+
+    if(values[0].name.indexOf("NA") >= 0) {
+        // ADD sum Parse
+            var tester = Parse.Object.extend(DB);
+            var query = new Parse.Query(tester);
+            event.preventDefault();
+            query.get(obj.id, {
+                success: function(details) {
+                    //add to parse
+                    details.set("NAsum", sum);
+
+                        details.save(null, {
+                            success: function(details) {
+                                console.log("success");
+                            },
+                            error: function(details, error) {
+                                // Execute any logic that should take place if the save fails.
+                                // error is a Parse.Error with an error code and message.
+                                alert('Failed to create new object, with error code: ' + error.message);
+                            }
+                        });
+                },
+                error: function(object, error) {
+                    alert("Error: " + error.code + " " + error.message);
+                }
+
+            });
     }
 
 }
@@ -672,6 +783,9 @@ $(".next").click(function(){
     // GET VALUES FROM ARRAY OF INPUTS
     var test = $(this).parent().serializeArray();
     console.log(test);
+
+    // var niyam = $('#niyamfs1').serializeArray();
+    // console.log(niyam);
 
     var check = checkifValid(test);
 
