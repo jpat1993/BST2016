@@ -108,15 +108,52 @@ function regionClick(id){
  
 
 
+    // next_fs = $("#login");
+    // // next_fs.show(); 
+    // obj.current = next_fs;
+    // console.log(obj.current);
+
+    // shiftPage(current_fs, next_fs);
+
+    // var region = document.getElementById("region");
+    // region.classList.add('hide');
+
+
+
+    animating = true;
+
+    current_fs = $("#region");
+    // console.log(obj.current);
+ 
     next_fs = $("#login");
-    // next_fs.show(); 
+    next_fs.show(); 
     obj.current = next_fs;
-    console.log(obj.current);
+    // console.log(obj.current);
 
-    shiftPage(current_fs, next_fs);
 
-    var region = document.getElementById("region");
-    region.classList.add('hide');;
+    // $("#progressbar li").eq($("fieldset").index(next_fs)-1).addClass("active");
+
+    current_fs.animate({opacity: 0}, {
+            step: function(now, mx) {
+                //as the opacity of current_fs reduces to 0 - stored in "now"
+                //1. scale current_fs down to 80%
+                scale = 1 - (1 - now) * 0.2;
+                //2. bring next_fs from the right(50%)
+                left = (now * 50)+"%";
+                //3. increase opacity of next_fs to 1 as it moves in
+                opacity = 1 - now;
+                current_fs.css({'transform': 'scale('+scale+')'});
+                next_fs.css({'left': left, 'opacity': opacity});
+            }, 
+            duration: 800, 
+            complete: function(){
+                current_fs.hide();
+                animating = false;
+            }, 
+            //this comes from the custom easing plugin
+            easing: 'easeInOutBack'
+        });
+
 
 };
 
@@ -141,7 +178,8 @@ $(".new").click(function(){
     obj.current = next_fs;
     console.log(obj.current);
 
-    $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+    $("#progressbar li").eq($("fieldset").index(next_fs)-1).addClass("active");
 
     current_fs.animate({opacity: 0}, {
             step: function(now, mx) {
@@ -637,8 +675,8 @@ function checkifValid(values) {
         var value = values[prop].value;
         var name = values[prop].name;
 
-        // For the Niyam Validate
-        if(value === "" || value === "-- --") {
+        // For the Niyam Validate and Grade
+        if(value === "" || value === "-- --" || value === "Select Your Grade") {
            return false;
         }
 
