@@ -985,7 +985,7 @@ $(".next").click(function(){
 
 
     } else {
-        alert("Please Fill out all the Required Information");
+        alert("Please fill out all the required information");
     }
 
 })
