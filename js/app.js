@@ -61,7 +61,7 @@ function headerClick(id){
             getInfo(obj.id,next_fs);
         }
     } else {
-        alert("Please Fill out all the Required Information");
+        errorAlert("Please fill out all the required information.");
     }
 
 };
@@ -294,7 +294,7 @@ $(".search").click(function(){
             }
         },
         error: function(error) {
-            alert("Error: " + error.code + " " + error.message);
+            errorAlert("Error: " + error.code + " " + error.message);
         }
     });
 
@@ -308,7 +308,9 @@ function check(ObjectID) {
 
     var tester = Parse.Object.extend(DB);
     var query = new Parse.Query(tester);
-    var pass = prompt("Please enter your Password");
+    var pass = prompt("Please enter your password.");
+
+
     event.preventDefault();
     query.get(ObjectID, {
         success: function(details) {
@@ -320,11 +322,11 @@ function check(ObjectID) {
                 loadDetails(details.id);
                 
             } else {
-                alert("Your Password is Incorrect!")
+                errorAlert("Your password is incorrect!")
             }
         },
         error: function(object, error) {
-            alert("Error: " + error.code + " " + error.message);
+            errorAlert("Error: " + error.code + " " + error.message);
         }
         
     });
@@ -417,7 +419,7 @@ function loadDetails(ObjectID) {
             // }
         },
         error: function(object, error) {
-            alert("Error: " + error.code + " " + error.message);
+            errorAlert("Error: " + error.code + " " + error.message);
         }
         
     });
@@ -516,13 +518,13 @@ $(".save").click(function(){
                               error: function(details, error) {
                                 // Execute any logic that should take place if the save fails.
                                 // error is a Parse.Error with an error code and message.
-                                alert('Failed to create new object, with error code: ' + error.message);
+                                errorAlert('Failed to create new object, with error code: ' + error.message);
                               }
                             });
                     };
                 },
                 error: function(object, error) {
-                    alert("Error: " + error.code + " " + error.message);
+                    errorAlert("Error: " + error.code + " " + error.message);
                 }
 
             });
@@ -545,7 +547,7 @@ $(".save").click(function(){
                   },
                   error: function(trial, error) {
                     // Execute any logic that should take place if the save fails.
-                    alert('Failed to create new object, with error code: ' + error.message);
+                    errorAlert('Failed to create new object, with error code: ' + error.message);
                   }
                 });
 
@@ -567,7 +569,7 @@ $(".save").click(function(){
                               },
                               error: function(trial, error) {
                                 // Execute any logic that should take place if the save fails.
-                                alert('Failed to create new object, with error code: ' + error.message);
+                                errorAlert('Failed to create new object, with error code: ' + error.message);
                               }
                         });
 
@@ -599,7 +601,7 @@ $(".save").click(function(){
                               },
                               error: function(trial, error) {
                                 // Execute any logic that should take place if the save fails.
-                                alert('Failed to create new object, with error code: ' + error.message);
+                                errorAlert('Failed to create new object, with error code: ' + error.message);
                               }
                         });
 
@@ -608,7 +610,7 @@ $(".save").click(function(){
                   },
                   error: function(User, error) {
                     // The object was not retrieved successfully.
-                    alert('Failed to get old object, with error code: ' + error.message);
+                    errorAlert('Failed to get old object, with error code: ' + error.message);
                   }
                 });
 
@@ -622,7 +624,7 @@ $(".save").click(function(){
 
         alert("Your Application has been saved!");
     } else {
-        alert("Please Fill out all the Required Information");
+        errorAlert("Please fill out all the required information.");
     }
 
 
@@ -708,7 +710,7 @@ function checkifValid(values) {
         }
         if(values[prop].name === "confirm") {
             if(pass !== values[prop].value){
-                alert("The Passwords do NOT match!");
+                errorAlert("The passwords do NOT match!");
                 return false;
             }
         }
@@ -723,14 +725,14 @@ function checkifValid(values) {
                 success: function(results) {
                     if (results != null)
                     {
-                        alert("An application with same email already exists!");
+                        errorAlert("An application with same email already exists!");
                         console.log("Email exists!");
                         window.history.go(0);
                         return false;
                     }
                 },
                 error: function(error) {
-                    alert("Error: " + error.code + " " + error.message);
+                    errorAlert("Error: " + error.code + " " + error.message);
                 }
             });
 
@@ -755,12 +757,12 @@ function checkifValid(values) {
                             error: function(details, error) {
                                 // Execute any logic that should take place if the save fails.
                                 // error is a Parse.Error with an error code and message.
-                                alert('Failed to create new object, with error code: ' + error.message);
+                                errorAlert('Failed to create new object, with error code: ' + error.message);
                             }
                         });
                 },
                 error: function(object, error) {
-                    alert("Error: " + error.code + " " + error.message);
+                    errorAlert("Error: " + error.code + " " + error.message);
                 }
 
             });
@@ -874,13 +876,13 @@ $(".next").click(function(){
                             error: function(details, error) {
                                 // Execute any logic that should take place if the save fails.
                                 // error is a Parse.Error with an error code and message.
-                                alert('Failed to create new object, with error code: ' + error.message);
+                                errorAlert('Failed to create new object, with error code: ' + error.message);
                             }
                         });
                     };
                 },
                 error: function(object, error) {
-                    alert("Error: " + error.code + " " + error.message);
+                    errorAlert("Error: " + error.code + " " + error.message);
                 }
 
             });
@@ -905,7 +907,7 @@ $(".next").click(function(){
                     error: function(trial, error) {
                         // Execute any logic that should take place if the save fails.
                         // error is a Parse.Error with an error code and message.
-                        alert('Failed to create new object, with error code: ' + error.message);
+                        errorAlert('Failed to create new object, with error code: ' + error.message);
                     }
                 });
 
@@ -928,7 +930,7 @@ $(".next").click(function(){
                         error: function(trial, error) {
                             // Execute any logic that should take place if the save fails.
                             // error is a Parse.Error with an error code and message.
-                            alert('Failed to create new object, with error code: ' + error.message);
+                            errorAlert('Failed to create new object, with error code: ' + error.message);
                         }
                     });
 
@@ -961,7 +963,7 @@ $(".next").click(function(){
                                 error: function(trial, error) {
                                     // Execute any logic that should take place if the save fails.
                                     // error is a Parse.Error with an error code and message.
-                                    alert('Failed to create new object, with error code: ' + error.message);
+                                    errorAlert('Failed to create new object, with error code: ' + error.message);
                                 }
                             });
 
@@ -971,7 +973,7 @@ $(".next").click(function(){
                     error: function(User, error) {
                         // The object was not retrieved successfully.
                         // error is a Parse.Error with an error code and message.
-                        alert('Failed to get old object, with error code: ' + error.message);
+                        errorAlert('Failed to get old object, with error code: ' + error.message);
                     }
                 });
 
@@ -985,7 +987,7 @@ $(".next").click(function(){
 
 
     } else {
-        alert("Please fill out all the required information");
+        errorAlert("Please fill out all the required information.");
     }
 
 })
