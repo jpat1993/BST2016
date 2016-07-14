@@ -14,7 +14,89 @@ var fieldsets = ["#region", "#login", "#existingfs1", "#startfs1", "#parentfs1",
 
 Parse.initialize("1dlfQyT8N0OrUJXzRWk9gtWz3fXHYNgKnZNOhWyY", "OTs8JFyPYJ3yrm03qc1jgY9NGCFJBXqsxsNCKT8E");
 Parse.serverURL = 'https://parseapi.back4app.com';
-var DB;         // need for accessing the DB in parse
+var DB = "BST2016";         // need for accessing the DB in parse
+var region;  // for region
+
+
+
+$('.forgot').on('click', function(e){
+    
+    e.preventDefault();
+    
+    /* Popup an alert with the form */
+    $.jAlert({
+        'title': 'Forgot Password',
+        'content': '<label>Enter your email and birthday to get your password.</label><br><form>Email:<br><input type="email" name="email"><br>Birthday: (MM/DD/YYYY) <br><input type="date" name="birthday">',
+        'theme': 'blue',
+        'onOpen': function(alert){
+            alert.find('form').on('submit', function(e){
+                e.preventDefault();
+            })
+    },
+        'autofocus': 'input[name="email"]',
+        'btns': [
+            /* Add a save button */
+            { 'text': 'Submit', 'theme': 'green', 'closeAlert': false,         
+
+            'onClick': function(e){
+                
+            e.preventDefault();
+
+            var btn = $('#'+this.id),
+              alert = btn.parents('.jAlert'),
+              form = alert.find('form'),
+              email = form.find('input[name="email"]').val(),
+              birth = form.find('input[name="birthday"]').val();
+
+            /* Verify required fields, validate data */
+                var searcher = Parse.Object.extend(DB);
+                var query = new Parse.Query(searcher);
+                query.equalTo("email", email);
+                query.equalTo("birthday", birth);
+                // event.preventDefault();
+
+                query.find({
+                    success: function(results) {
+                    // alert("Successfully retrieved " + results.length + " scores.");
+                        // Do something with the returned Parse.Object values
+                        for (var i = 0; i < results.length; i++) {
+                          var object = results[i];
+                          var returnEmail = object.get('email');
+                          var returnPass = object.get('password');
+
+
+                        }
+
+                        if(returnEmail === undefined) {
+                            returnEmail = "Incorrect email or birthday."
+                            returnPass = "Incorrect email or birthday."
+                        }
+                        infoAlert('Email : ' + returnEmail + "<br>Password : " + returnPass);
+                    },
+                    error: function(error) {
+                        errorAlert("Error: " + error.code + " " + error.message);
+                    }
+                });
+
+
+            /* If it was successful, redirect user */
+            // window.location.href = '';
+
+
+            return false;
+          }
+       },
+      {
+        'text': 'close'
+      }
+        ]
+    });
+});
+  
+
+
+
+
 
 function headerClick(id){   
 
@@ -81,27 +163,27 @@ function regionClick(id){
     console.log(id);
 
     if(id == "southeast") {
-        DB = "SE_BST_2016";
+        region = "Southeast";
         var cent = document.getElementById("SEcenter");
         cent.classList.remove('hide');
     } else if (id == "northeast") {
-        DB = "NE_BST_2016";
+        region = "Northeast";
         var cent = document.getElementById("NEcenter");
         cent.classList.remove('hide');
     } else if (id == "midwest") {
-        DB = "MW_BST_2016";
+        region = "Midwest";
         var cent = document.getElementById("MWcenter");
         cent.classList.remove('hide');
     } else if (id == "southwest") {
-        DB = "SW_BST_2016";
+        region = "Southwest";
         var cent = document.getElementById("SWcenter");
         cent.classList.remove('hide');
     } else if (id == "west") {
-        DB = "West_BST_2016";
+        region = "West";
         var cent = document.getElementById("Wcenter");
         cent.classList.remove('hide');
     } else if (id == "canada") {
-        DB = "Canada_BST_2016";
+        region = "Canada";
         var cent = document.getElementById("Canadacenter");
         cent.classList.remove('hide');
     }
@@ -522,6 +604,8 @@ $(".save").click(function(){
                               }
                             });
                     };
+
+
                 },
                 error: function(object, error) {
                     errorAlert("Error: " + error.code + " " + error.message);
@@ -576,6 +660,19 @@ $(".save").click(function(){
 
                     }
 
+                    // Add Region Data
+                    trial.set("region", region);
+                    trial.save(null, {
+                      success: function(trial) {
+                        console.log("success");
+                      },
+                      error: function(trial, error) {
+                        // Execute any logic that should take place if the save fails.
+                        // error is a Parse.Error with an error code and message.
+                        errorAlert('Failed to create new object, with error code: ' + error.message);
+                      }
+                    });
+
                 console.log(test);
             } else {
 
@@ -622,7 +719,7 @@ $(".save").click(function(){
         }
 
 
-        alert("Your Application has been saved!");
+        infoAlert("Your Application has been saved!");
     } else {
         errorAlert("Please fill out all the required information.");
     }
@@ -690,17 +787,17 @@ function checkifValid(values) {
 
 
         // For the Center Validate
-        if(DB === "SE_BST_2016" && values[prop].name === "SEcenter" && value === "Select an Option") {
+        if(region === "Southeast" && values[prop].name === "SEcenter" && value === "Select an Option") {
             return false;
-        } else if (DB === "NE_BST_2016" && values[prop].name === "NEcenter" && value === "Select an Option") {
+        } else if (region === "Northeast" && values[prop].name === "NEcenter" && value === "Select an Option") {
             return false;
-        } else if (DB === "MW_BST_2016" && values[prop].name === "MWcenter" && value === "Select an Option") {
+        } else if (region === "Midwest" && values[prop].name === "MWcenter" && value === "Select an Option") {
             return false;
-        } else if (DB === "SW_BST_2016" && values[prop].name === "SWcenter" && value === "Select an Option") {
+        } else if (region === "Southwest" && values[prop].name === "SWcenter" && value === "Select an Option") {
             return false;
-        } else if (DB === "West_BST_2016" && values[prop].name === "Wcenter" && value === "Select an Option") {
+        } else if (region === "West" && values[prop].name === "Wcenter" && value === "Select an Option") {
             return false;
-        } else if (DB === "Canada_BST_2016" && values[prop].name === "Canadacenter" && value === "Select an Option") {
+        } else if (region === "Canada" && values[prop].name === "Canadacenter" && value === "Select an Option") {
             return false;
         }
         
@@ -725,7 +822,7 @@ function checkifValid(values) {
                 success: function(results) {
                     if (results != null)
                     {
-                        errorAlert("An application with same email already exists!");
+                        alert("An application with same email already exists. Please login from the existing user button.");
                         console.log("Email exists!");
                         window.history.go(0);
                         return false;
@@ -936,6 +1033,20 @@ $(".next").click(function(){
 
 
                 }
+
+                // Add Region Data
+                    trial.set("region", region);
+                    trial.save(null, {
+                      success: function(trial) {
+                        console.log("success");
+                      },
+                      error: function(trial, error) {
+                        // Execute any logic that should take place if the save fails.
+                        // error is a Parse.Error with an error code and message.
+                        errorAlert('Failed to create new object, with error code: ' + error.message);
+                      }
+                    });
+
 
                 console.log(test);
             } else {
