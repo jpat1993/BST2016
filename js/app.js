@@ -12,7 +12,7 @@ var newapp = true;
 
 var fieldsets = ["#region", "#login", "#existingfs1", "#startfs1", "#parentfs1", "#sanchalakfs1", "#academicfs1", "#satsangfs1", "#essayfs1", "#niyamfs1", "#finish1"]
 
-Parse.initialize("1dlfQyT8N0OrUJXzRWk9gtWz3fXHYNgKnZNOhWyY", "OTs8JFyPYJ3yrm03qc1jgY9NGCFJBXqsxsNCKT8E");
+Parse.initialize("0Fb9B6wZHGmpjRTJUoRvyFSGQl2lTOhbYNnvazTv", "gHDjSNQtKWNaFlquz6QCvBWiIJHVQ3CqEezuS22r");
 Parse.serverURL = 'https://parseapi.back4app.com';
 var DB = "BST2016";         // need for accessing the DB in parse
 var region;  // for region

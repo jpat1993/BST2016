@@ -32,7 +32,12 @@ body {
     background: whitesmoke;
 }
 
-
+input#password {
+    -webkit-text-security: disc;
+}
+input#confirm {
+    -webkit-text-security: disc;
+}
 
 input[type=text] 
 {height: 60px;}
