@@ -342,7 +342,7 @@ $(".search").click(function(){
     // div.style.background = "red";
     // div.style.margin = "50px auto";
 
-    // document.body.appendChild(div);
+    // document.body.appendChild(div);v 
 
     var div = document.getElementById("searchResults");
     div.innerHTML = "";
@@ -1104,7 +1104,40 @@ $(".next").click(function(){
 })
 
 
-$(".logout").click(function(){
+$("#finalSubmit").click(function(){
+    
+    var id = obj.id;
+
+    var tester = Parse.Object.extend(DB);
+    var query = new Parse.Query(tester);
+
+    query.get(id, {
+        success: function(details) {
+            details.set("FINALSUBMIT", true);
+            console.log(details);
+            details.save(null, {
+              success: function(details) {
+                console.log("success");
+              },
+              error: function(details, error) {
+                // Execute any logic that should take place if the save fails.
+                // error is a Parse.Error with an error code and message.
+                errorAlert('Failed to create new object, with error code: ' + error.message);
+              }
+            });
+
+        },
+        error: function(object, error) {
+            errorAlert("Error: " + error.code + " " + error.message);
+        }
+        
+    });
+
+    console.log(obj.id);
+
+
+
+
     location.reload();
 })
 
