@@ -1104,8 +1104,30 @@ $(".next").click(function(){
 })
 
 
+
+
+
 $("#finalSubmit").click(function(){
     
+    confirm(function(e,finalSubmit){ //event + button clicked
+        e.preventDefault();
+        submitFinal();
+    }, function(e, finalSubmit){
+        e.preventDefault();
+    });
+
+
+})
+
+
+$(".logout").click(function(){
+    
+    location.reload();
+})
+
+
+
+function submitFinal() {
     var id = obj.id;
 
     var tester = Parse.Object.extend(DB);
@@ -1135,10 +1157,11 @@ $("#finalSubmit").click(function(){
 
     console.log(obj.id);
 
+    successAlert('Thank you for completing and submitting your BST Application!');
+    
+    // location.reload();
 
 
-
-    location.reload();
-})
+}
 
 

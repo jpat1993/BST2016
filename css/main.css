@@ -232,6 +232,34 @@ label.error {
     color: #666;
     margin-bottom: 20px;
 }
+
+.final-subtitle {
+    font-weight: bold;
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.subfinal-subtitle {
+    font-weight: normal;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.final-title {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
 /*progressbar*/
 #progressbar {
     margin-bottom: 30px;
